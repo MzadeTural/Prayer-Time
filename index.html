@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaz-Time</title>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="shourtcut icon" type="image" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPIAAADQCAMAAAAK0syrAAAA/FBMVEX////ywHz/3K77whr3kym3kXiFXFL0ypL71KDyv3n/6cz/26v/3rH0w4Lyvnb916X50Jj3yY30x4f88eL43bv8wgb206STa133jx7En4Kkfmr1zZv9+PC0jnb8zWKfeGX3o07duZT2iwB+VE3BmXj/pibouHv5rET5skL5tC35qSJ6T0mIX1T5qFf+7Nr6tDn83cP/oQ77zqb/zCj+89b95J/80Vv6xpn5pTn6t3z95Kj82H/3jyb7wVz+5bH9tCD7uxz3mSfxuWr+7ML7yUD93ZH8zU3/9+H3mTj+8Mv96bn4nkb81W7/xGn/rzD/xwv5tnj81LL4rWbUr43zI6+CAAAL0ElEQVR4nO3d6WLauBYAYMAmbCKBEJYQUxK43HRawgSSZmnTdNKmy7Sd3mb6/u9yvS+yLGs5ju3U5++QU31I1pGEYEql+GhqDC/KRGhNoESNc6BEicd5GSaPdvUKJlHy8eoKZkCuFhcgeR4hLhYrkDyXV2c9kESJR0+5ugRJdHLV/wCSKPH40L86gcijzY77byASJR9v+scziIf5QSff56JMafc6eQ8g0fXoWOl/BkiUeJz3lePRNUCiuxudnIsy9VEn36jyeVYzg5yLMnVhkGfyZepypJOVfg4eZq2v6OSRfJk6schfAdqUcNxaZOkypc1Uk5yDMvXdJKsz2TynFlk5y/zI1s4Ui3wqmeh6ZJH7md9N6SXKJEuXqZFqkz+CtCvB+GiQn9+o6kguz2qmk5/ruZRPMA1LLj4pVi+rkmVqM3LIWS9Tn41Otnp5I5Xo8MYlvwZqW0Lx2iMfyuTRS5RL/g7UNjc3bLrvLlmV2k2demTwkQ27B9dMsU2WKVN6ifLIf4O1z4jeLWi6Dz6yVJlSVR8Ztkw1YeeGjz6yKrGbMkqUS1bu4RqoB4J9B88UH3kkXqaMEuWRYc8JKs8gs1klyiWLl6lDi/ynTQYdihXQQfM6SBbeTWkjNUAGPSfoKpDZPtnkP61neSRaXU6DZKUP2ci3oNlssUsWLVPXOBmylP6ArPNfcbJomfqiYmTIc4IF5Gz4BiOrX8TyrEYYGXRkryGXNo5Y+cMmC5apjUP+wyXDnRNoa8DjtHOX7PSyYJk6CZPhjrPP14A171W4l4XKlKaqOBlwAfZhDbiAvVdwsqqKTI52iQqQ4WZZtIbbjWr9MFloN3Xtkt95ZLDnD63hjpa+EshCZeqbSiCD9UxnrZxB5frukd+5A/sbfx6nRAXICtgq8Z8FXC5f87xnWaBMbWYeue8FVDF9vlD6QNcx/vY1z+vlGX+Z+nnoxttnXkCdZfxYgFX5W1/z3nqt/smdqFZu21HeQV5A3SVbLMBOlpq+5u14ra5xJ6o1ynY06hU3WkBkzSAD7VKaLa99da/VMuRyAuTP6wXYYVpOyM31u7MzBWZhkxNyxyD/D2Zk54TcMskw81dOyNqPF2dnQGdpOSGvjvXV1zOYc5F8kJvrxQt9xQ6z/soH+XixeAe2S8kFebWwyArI3dBckPVxbZEViKc5F+Se28sQ2XJBLv2ztp5lkIPxfJD1bjZmbJijoHyQ9e2yXpf7MJvvfJBXa5P8O/VySyf/BXWSlg/y28WdakxfMCUvD+TNF/XmhUG+gNhLZZ+sXY6Mi6HWuXj/Xn4KS4AMevbVux6ZB+QL99OAs9eSq04AstWCRHp5dT2zbyb85R239xW5DzQD5DJGZno790xr2+tiX0Y9zLPTltCur/dz5nwEcqf4o38v9FlXr2U2JtC8VqXj9JVJaLB8VWxvu+yPejClnViArNlD2owXSjD6nwQmsl6L0DRUDzR/W4RMSCtC3qgeODCubbPA7E0kV7JCbh7OVF/c4WIT/YZzHssyOTCmSePamcf4KlaGyQ9fgmDCuHbQFzxnBpkl9/7FwORx7YxujoKVVfKDGhJHjGvujk6MjAhVip18PQuBo8e13dGsn9uQyEikSK3eB/5mt9Y9qONxwDi39r6Fu1gPmlhhPx/SCA3r1nYDzX/PdH8C6+ZGOLYZ72GczojiRQxZX5iwvaWrbULj+DtZDxQ0h2KbcaF9SRjUcY+yM7jZLlU041qK2FpaKg2omVjfuX8jxPRH2UGzPdB79JYOWMWl0gElE6NYOyQOamqJCpjZqhXNvH3ALta3jpGZGN85jTxxMT3KtpntXkX0iNzmOyTQut400OjseFFje+coYoZHmct8UPM1r+Nrdpdzya61vb/17x9bbH8dOaqxy4IQZl91Rt6pSLnNfdgicyqinUSLVZVl9rLNTM9zJo77wqtq7tnLNrOclmSBfE0Ts85etpnh3CAD5E1EPeacvaxg+KWL9Mkrah9zzF5WN8dfG0qfTClPZrDPXpY59lsnqZPpDzI/Of4LtWmTT+kPMt+EbZHjPpJNm/ztBpocO7RTJkftF73gm7AtM33WTpesxT3IYmT6wjNd8mUsmbNGsXRzuuT4TuaesE0yda2dKvkh9kkWI9O/RZwqOXa6FibTjoXSJPcYOpm/Rplk2pXeNMkbhkdZjEwd2WmSKUch0mTKJjJNMsO4FiZT5uwUySsWMtcBgY9MWWinSH5gGNeiZNrdxxTJ8UsvVWi9aXVz9AIsRTL1kE+aHP0hVYpk6kmuNDl6MZLihcZkydHHuyn2MktZFidHnxNQLzQyxd77bSMcMXZxomV+9FMnXZxItpcJ5F7dbEzg+oR3caJhMt4L3BXpVAhBvCuSLJlwJYx8PaYTaL7I9Rh2crIzNuFZTp/88/cjx55gS5EJRSp9MsveUXjBSVqKpE9mOQYSJxM+s0ifHPtBhRSZ8A8mRa4jQhDJLOdAovtl4s9G2V80wELkQmOQ3G63a51QEPc1s1F83PXFgnT4pYXbVTN+KidAZrqIGLoyF77QaHZysxuM2m5s6A2KfxExujXsXzOa0AtfaMSaznoRkX5lzn3n9vB/kP5XkkF811dxLWX+Xy3FXGhssr0ziUajRx6RgQC/0JgF8uNcaHQvv2aCTLlWLHGhMZjHGyvZIEeOSJkLjWX/zNnxXmKT248dGLnU8bfPa7XMhcaGbzVS8U36Npm4HkgwOji5WfGtQ5I9+7LJO6RVX3JBID/ecV9BLsgFuSAX5IJckAtyQS7IBbkgF+SCLExGA9LPCon5KqFcGSSjyv5yAoRGR9PhLyxV9sjoaDjfmg+PAMz6m7e1tTXH3r/MkZHRSqOhVWkzGkznZqpl4P3LGhlN5lu2eSxpRoOhm8s/uDNGvjXF0+pY3owGBnY5mQyNXL5+zhYZ7b80WlmtVo2Gyo1tNDTfPD2M9++l9zxnizzQxcOqFVO9nRtxM9rXx8vYSjVZ6mlvM0k2mjmtOjHW51oJ8twaLlYMfUP7Ucj+XyykkodzT2wOyNuKYKCjlz6xbvZmMCoZid3hDJPbXlto5NvhsOqP6VyGPAnk2tpn6+U2ELnccbuZ3svVYCwpZMJSMkDGco2ZyMh3G0iSXHaTUskTjEwpU2gwnlcrkf8dHWG5JkwDu1WGI3edf5A+fWHkyOnLXkrqy9KIV6ANTmaZvlAXkOy6uMhRhdlch1tLtKjRPRAh75QhybtwZFRxV6X6+hnfKMmQd0HJTqGSJ7tdbKPJG00BMnatT57cBuplZ6vlmYkbTQFyqw1MbliFSpKMKmOni4fjpYPeD5v5yf4CBUO2C5Uc2dsQLo3189Qd3KGZm5/cKoOTG2ahkiKjI6eL7YWpuTM0Bzf+QHOTEX5rC6KXGzuS5Ftjb2ntgt1XjJ1HGjNzk3dCzQUgl9tIiuyKpwGL09FBMy8ZtfHWgpCNGUycjGzxEl+WTklmTjLqhFsLQS6XJXoZ/bLEQ1xsHQHgY5u3l8NtBSLXkChZ3w2GBzU2uIfCvYxqiZEbLUEy2lgdOSaJq8axB3ZAyEdukdoKQ9aX2lRysJ0TXy8PiY+xF1Ps8JuLHFxcA5MbdRr51z4WbjOrc7rYqVYubICnopHrxKYCkctl6qEuHu6DHNPHrnkam4tEJjaUmTw4cCJU6KxEXfcFB4MGRo4KZCysY8SWeR7/WZZDrrntiLgt3/YaSiW3Y78O432HhZVszV1xYut5nrKSfd+oiW1pm06O+ntCRmay7xieGsPQIoxC5ojHJ1emvno8noZj4plJG8kckgfLraG/J/GYuyNgoo+Gp0A2PkOc0Mi+QT+N/7wyF+Qj/+c2dHJ1OYzJlhfyhJk8fSJk/4ctMeTJEyGP2cnV8ZMgB7YIceTJUyBXuMjVwW9H3n8avVwtyAX50claIJ4mOWgsEb4O/dTI2LfKS/wJ8kcORkEuyAW5IBfkglyQC3JBzhk57kd9+MiMvxGUKrkbFzUe8n9i0/FsfRIix77uv1zkZH8B0IjkyWU+snB7mKMgc0RBjo6CnDr5/6odT0+YbI72AAAAAElFTkSuQmCC">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="/assect/js/script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assect/css/style.css">
+</head>
+<body onload="myFunction()">
+
+    <div class="header"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHAbXEc7P_AFzlY9LClG9APIlz_s_tKMY7Cw&usqp=CAU" alt=""><h1>Prayer Times</h1>  </div>
+
+    <section id="Main">
+        <audio id="alarm-sound" loop>
+            <source src="/assect/sound/azan1.mp3" type="audio/mp3">
+          </audio>
+    <div class="container">
+        <div class="row">
+           
+            <div class="col-lg-6">
+                <label class="lbl" for="start">
+                    Enter the Date:
+                </label>
+                <input id="Datepicker" type="date" name="begin" 
+                placeholder="dd-mm-yyyy" value=""
+                min="1997-01-01" max="2030-12-31">
+                <br>
+                <br>
+                
+                  </div>
+
+            <div class="col-lg-6">
+                <label class="lbl" for="start">
+                    Today:
+                </label>
+               
+                <input id="CurrentDate" type="" name="begin" 
+                placeholder="dd-mm-yyyy" value=""
+                min="1997-01-01" max="2030-12-31">              
+                <table  id="MyTable" class="table table-success table-striped ">                    
+                  </table>
+                  <div id="loader"></div>    
+               
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
